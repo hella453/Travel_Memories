@@ -1,0 +1,251 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bijela"   >
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollDetail"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/app_bar"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp">
+
+
+            <TextView
+                android:id="@+id/dateTxtdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:text="Datum"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/listVrijeme"
+                android:textSize="@dimen/naslovi_16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/greyLine" />
+
+            <TextView
+                android:id="@+id/textPhotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="sans-serif-regular"
+                android:text="Photos"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/listDetails"
+                android:textSize="@dimen/podnaslovi_14sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:id="@+id/okvir"
+                android:background="@drawable/okvir">
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/detailCoverPhoto"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:background="@color/prljavoBijela"
+                    android:onClick="onPhotoClick"
+                    android:layout_marginBottom="16dp"
+                    android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="0"
+                android:gravity="center"
+                android:layout_alignBottom="@id/okvir"
+                android:id="@+id/brojSlikaTxt"
+                android:textSize="24sp"
+                android:textColor="@color/listDetails"
+
+                android:background="@drawable/textview_circle"
+                android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/greyLine" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailCoverPhoto"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="6"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textLokacija"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="sans-serif-regular"
+                            android:text="Location"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="240dp"
+                            >
+                            <fragment
+                                android:id="@+id/map"
+                                android:name="com.google.android.gms.maps.MapFragment"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="match_parent"/>
+                            <ImageView
+                                android:id="@+id/transparent_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@color/transparent" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+
+                    android:layout_marginTop="8dp"
+                    android:background="@color/greyLine" />
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="sans-serif-regular"
+                            android:text="Notes"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/listDetails"
+                            android:textSize="@dimen/podnaslovi_14sp" />
+
+                        <TextView
+                            android:id="@+id/biljeskeTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="6"
+                            android:fontFamily="sans-serif"
+                            android:singleLine="false"
+                            android:background="@drawable/lista_bg"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/listTitle"
+                            android:gravity="center_horizontal"
+                            android:textSize="@dimen/naslovi_16sp"
+                            android:padding="8dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/greyLine" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.software.shell.fab.ActionButton
+        android:id="@+id/action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:onClick="onClicknewPlace"
+        fab:button_color="@color/accentColor"
+        fab:button_colorPressed="@color/accent"
+        fab:hide_animation="@anim/fab_roll_to_down"
+        fab:image="@drawable/ic_plus"
+        fab:image_size="24dp"
+        fab:shadow_color="#757575"
+        fab:shadow_radius="1.0dp"
+        fab:shadow_xOffset="0.5dp"
+        fab:shadow_yOffset="1.0dp"
+        fab:show_animation="@anim/fab_roll_from_down"
+        fab:stroke_color="@color/bijela"
+        fab:stroke_width="1.0dp"
+        fab:type="DEFAULT" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Helena/Desktop/Projekti/Android/Travel%20Memories/TravelMemoriesJava/app/src/main/res/layout/activity_place_detail.xml -->

@@ -1,0 +1,13 @@
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\classes\debug
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-5d27ac0be6976eea3e3ec578c78a31216d7c107e.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\classes-cb15f8f5c54320529e4f88028446165cde29699c.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\classes-fa2a114927c53e157f9113241bd525015d123ab9.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\classes-3570fc5717a90225df679a6df6b5862ab472469d.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.4-28ace75cb5f9e4e11ccae69998f9d68100289ca8.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\volley-cc32be4b1e68bf8353bdd97ae4f1bc84fec28584.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\classes-fbef5ed678b37c1d275cb59c9c8691572499b905.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-cb17a812b3a251a0e3828e40e00c6020833fa706.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-e77c0cbacf375cd34d497d8d5502985ebf4cb51a.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\classes-3798cd41e87504aa96d6e036993e6a66a59e46ac.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\classes-a9c212540f2f39612cc37dca1bd55d414d0044e3.jar
+C:\Users\Helena\Desktop\Poslana verzija\TravelMemoriesJava\app\build\intermediates\pre-dexed\debug\classes-cbd14bd5a6efec5b61cb974293929fbba2a1d5b7.jar

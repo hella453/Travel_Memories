@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:singleLine="true"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:ellipsize="marquee"
+    android:layout_height="wrap_content"
+
+    android:textSize="@dimen/naslovi_16sp"
+    android:fontFamily="sans-serif"
+    android:textColor="@color/listDetails"
+
+
+    />

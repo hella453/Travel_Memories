@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#4389FF</color>
+    <color name="primaryColorDark">#1976D2</color>
+    <color name="svjetloZuta">#FFF59D</color>
+    <color name="colorPrimaryText">#FFFFFF</color>
+    <color name="colorSecondaryText">#FFFFFF</color>
+    <color name="accentColor">#4389FF</color>
+    <color name="accent">#26C6DA</color>
+    <color name="prozirniAccent">#4026C6DA</color>
+    <color name="bijela">#FFFFFF</color>
+    <color name="listDetails">#8C000000</color>
+    <color name="listTitle">#E6000000</color>
+    <color name="listVrijeme">#40000000</color>
+    <color name="greyLine">#1A000000</color>
+    <color name="pressed_color">#4d90fe</color>
+    <color name="default_color">#ffffff</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="popuniSvaPolja">#EDEDED</color>
+    <color name="transparent">#00000000</color>
+    <color name="prljavoBijela">#F5F5F5</color>
+</resources>

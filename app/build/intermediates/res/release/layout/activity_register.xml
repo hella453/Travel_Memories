@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bijela"
+    tools:context="com.parse.starter.Activities.RegisterActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+
+    </include>
+
+    <LinearLayout
+        android:id="@+id/bigWrapperRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/app_bar"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+
+            android:id="@+id/errorTxt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/popuniSvaPolja"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="16dp"
+            android:text="All fields are required"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/podnaslovi_14sp"
+            android:textColor="@color/listVrijeme"
+            android:fontFamily="sans-serif-medium"/>
+
+        <ScrollView
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:id="@+id/registerScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+
+                android:id="@+id/registerLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="8dp"
+                android:scrollbars="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iconEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_mail_grey" />
+
+                <EditText
+                    android:id="@+id/registerEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toRightOf="@+id/iconEmail"
+                    android:ems="10"
+                    android:textColor="@color/listDetails"
+                    android:fontFamily="sans-serif"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/naslovi_16sp" />
+
+
+                <ImageView
+                    android:id="@+id/iconKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/registerEmail"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="32dp"
+
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_vpn_key_grey" />
+
+                <EditText
+                    android:id="@+id/registerPassTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/registerEmail"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toRightOf="@id/iconKey"
+                    android:fontFamily="sans-serif"
+                    android:ems="10"
+                    android:textColor="@color/listDetails"
+
+                    android:hint="Lozinka"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/naslovi_16sp" />
+
+                <ImageView
+                    android:id="@+id/iconPerson"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/registerPassTxt"
+                    android:layout_gravity="left|center"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_person_grey" />
+
+                <EditText
+                    android:id="@+id/imeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/registerPassTxt"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toRightOf="@id/iconPerson"
+                    android:fontFamily="sans-serif"
+                    android:ems="10"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/listDetails"
+                    android:hint="Ime"
+                    android:textSize="@dimen/naslovi_16sp" />
+
+                <ImageView
+
+                    android:id="@+id/iconCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imeTxt"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="32dp"
+
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_call_grey" />
+
+                <Spinner
+                    android:id="@+id/registerSpinner"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imeTxt"
+
+                    android:layout_gravity="center"
+
+                    android:layout_toRightOf="@+id/iconCall"
+
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/telTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imeTxt"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@id/registerSpinner"
+                    android:layout_toRightOf="@id/registerSpinner"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/listDetails"
+
+                    android:hint="Kontakt broj"
+                    android:inputType="phone"
+                    android:textSize="@dimen/naslovi_16sp" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Helena/Desktop/Poslana%20verzija/TravelMemoriesJava/app/src/main/res/layout/activity_register.xml -->

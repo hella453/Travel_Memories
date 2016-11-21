@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pozivniBroj_array">
+        <item>091</item>
+        <item>092</item>
+        <item>095</item>
+        <item>097</item>
+        <item>098</item>
+        <item>099</item>
+    </string-array>
+</resources>

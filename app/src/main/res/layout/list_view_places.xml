@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <ImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/bijela"
+
+        android:src="@drawable/circle5" />
+
+    <TextView
+        android:id="@+id/datumPlacesTxt"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/datum_bg"
+        android:gravity="center_horizontal"
+        android:paddingRight="16dp"
+
+        android:paddingTop="4dp"
+        android:textColor="@color/listVrijeme"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+
+        android:orientation="horizontal">
+
+        <com.mdb_software.helena.travelmemories3.DataBase.Volley.CircularNetworkImageView
+            android:id="@+id/slikaMjesta"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_perm_media_blue" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/prljavoBijela"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginLeft="16dp">
+
+        </View>
+        <TextView
+            android:id="@+id/titlePlacesTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:gravity="left"
+            android:text="Naslov" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

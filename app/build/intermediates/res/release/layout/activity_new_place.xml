@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bijela"
+    android:orientation="vertical"
+
+    tools:context="com.mdb_software.helena.travelmemories3.Activities.NewPlaceActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollNewPlace">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Switch
+                    android:id="@+id/switchTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margina_16dp"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@color/listDetails"
+                    android:text="New/Existing trip?" />
+
+                <TextView
+                    android:id="@+id/textPutovanje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/switchTrip"
+                    android:fontFamily="sans-serif"
+                    android:singleLine="true"
+                    android:text="@string/existingTrip"
+                    android:textColor="@color/listDetails"
+                    android:textSize="@dimen/podnaslovi_14sp" />
+
+                <EditText
+                    android:id="@+id/putovanjeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textPutovanje"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif"
+                    android:hint="Enter new trip name..."
+                    android:inputType="textCapSentences"
+                    android:singleLine="true"
+                    android:textColor="@color/listTitle"
+                    android:textColorHint="@color/listVrijeme"
+                    android:textSize="@dimen/naslovi_16sp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="invisible" />
+
+                <Spinner
+                    android:id="@+id/spinnerPutovanja"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textPutovanje"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:focusable="true"
+                    android:singleLine="true"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/greyLine"
+                android:layout_marginRight="8dp"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/textFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switchTrip"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"
+                android:text="Add photos"
+                android:textColor="@color/listDetails"
+                android:textSize="@dimen/podnaslovi_14sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               >
+
+                <org.lucasr.twowayview.TwoWayView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/twoWayList"
+                    style="@style/TwoWayView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+
+                    android:clickable="true"
+                   android:layout_marginLeft="40dp"
+                    android:columnWidth="100dp"
+                    android:drawSelectorOnTop="true"
+                    android:focusable="true"
+
+                    android:gravity="center"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="5dp"
+                    tools:context=".NewPlaceActivity" />
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/bttnPhoto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:layout_marginTop="8dp"
+                    android:onClick="onClickPhoto"
+                    android:src="@drawable/ic_camera_alt_white"
+                    app:cb_color="@color/accentColor"
+                    app:cb_pressedRingWidth="8dip" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/greyLine"
+                android:layout_marginRight="8dp"/>
+            <TextView
+                android:id="@+id/textaddlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switchTrip"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"
+                android:text="Add location"
+                android:textColor="@color/listDetails"
+                android:textSize="@dimen/podnaslovi_14sp" />
+            <EditText
+                android:id="@+id/addLocationTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapWords"
+                android:focusable="true"
+                android:hint="Add location name..."
+                android:fontFamily="sans-serif"
+                android:textColorHint="@color/listVrijeme"
+                android:singleLine="true"
+                android:textColor="@color/listTitle"
+                android:textSize="@dimen/naslovi_16sp"
+                />
+            <TextView
+                android:id="@+id/textLokacijaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switchTrip"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"
+
+                android:textColor="@color/listVrijeme"
+                android:textSize="@dimen/podnaslovi_14sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:id="@+id/transparent_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@color/transparent" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/greyLine"
+                android:layout_marginRight="8dp"/>
+
+
+            <TextView
+                android:id="@+id/textBiljeskaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switchTrip"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"
+                android:text="Add note"
+                android:textColor="@color/listDetails"
+                android:textSize="@dimen/podnaslovi_14sp" />
+
+            <EditText
+                android:id="@+id/biljeskaTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/prljavoBijela"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="20"
+                android:minLines="10"
+                android:hint="Add note..."
+                android:textColorHint="@color/listVrijeme"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:padding="4dp"
+                android:textSize="@dimen/naslovi_16sp"
+                android:singleLine="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/greyLine" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+<!-- From: file:/C:/Users/Helena/Desktop/Poslana%20verzija/TravelMemoriesJava/app/src/main/res/layout/activity_new_place.xml -->

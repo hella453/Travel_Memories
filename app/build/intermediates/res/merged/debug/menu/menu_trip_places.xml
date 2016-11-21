@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mdb_software.helena.travelmemories3.Activities.PlacesActivity">
+
+    <item android:id="@+id/map"
+        android:title="@string/map"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_marker"/>
+    <item android:id="@+id/logout"
+        android:title="@string/logout"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>
+<!-- From: file:/C:/Users/Helena/Desktop/Projekti/Android/Travel%20Memories/TravelMemoriesJava/app/src/main/res/menu/menu_trip_places.xml -->

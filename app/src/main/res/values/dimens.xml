@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margina_16dp">16dp</dimen>
+    <dimen name="podnaslovi_14sp">14sp</dimen>
+    <dimen name="app_bar_top_padding">0dp</dimen>
+    <dimen name="naslovi_16sp">16sp</dimen>
+    <dimen name="detaljiText_12sp">12sp</dimen>
+</resources>
